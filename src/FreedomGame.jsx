@@ -902,7 +902,7 @@ const FreedomGame = () => {
                   <circle
                     cx={player.x}
                     cy={player.y}
-                    r="18"
+                    r="14"
                     fill="#3b82f6"
                     stroke="#1e40af"
                     strokeWidth="3"
@@ -910,9 +910,9 @@ const FreedomGame = () => {
                   />
                   <text
                     x={player.x}
-                    y={player.y + 5}
+                    y={player.y + 4}
                     textAnchor="middle"
-                    fontSize="14"
+                    fontSize="11"
                     fontWeight="700"
                     fill="white"
                     style={{ pointerEvents: 'none' }}
@@ -929,8 +929,8 @@ const FreedomGame = () => {
                     const ldist = Math.sqrt(ldx * ldx + ldy * ldy) || 1;
                     const lnx = ldx / ldist;
                     const lny = ldy / ldist;
-                    const labelX = belief.x + lnx * 34;
-                    const labelY = belief.y + lny * 34 + 4;
+                    const labelX = belief.x + lnx * 27;
+                    const labelY = belief.y + lny * 27 + 4;
                     const labelAnchor =
                       lnx > 0.3 ? 'start' : lnx < -0.3 ? 'end' : 'middle';
 
@@ -940,7 +940,7 @@ const FreedomGame = () => {
                           <circle
                             cx={belief.x}
                             cy={belief.y}
-                            r="19"
+                            r="15"
                             fill={belief.color}
                             opacity="0.2"
                           />
@@ -948,7 +948,7 @@ const FreedomGame = () => {
                         <circle
                           cx={belief.x}
                           cy={belief.y}
-                          r={isHovered ? 16 : 14}
+                          r={isHovered ? 13 : 11}
                           fill={belief.color}
                           stroke={
                             isLocked
@@ -1009,8 +1009,8 @@ const FreedomGame = () => {
                       >
                         <circle
                           cx={cx}
-                          cy={cy - 38}
-                          r="13"
+                          cy={cy - 30}
+                          r="10"
                           fill="#fbbf24"
                           stroke="#f59e0b"
                           strokeWidth="2"
@@ -1018,9 +1018,9 @@ const FreedomGame = () => {
                         />
                         <text
                           x={cx}
-                          y={cy - 33}
+                          y={cy - 26}
                           textAnchor="middle"
-                          fontSize="13"
+                          fontSize="10"
                         >
                           ⚡
                         </text>
