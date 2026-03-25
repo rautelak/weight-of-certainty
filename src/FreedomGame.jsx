@@ -56,7 +56,7 @@ const FreedomGame = () => {
 
   const width = CANVAS_WIDTH;
   const height = CANVAS_HEIGHT;
-  const sz = getCanvasSizes(width, height);
+
 
   const getSvgCoordinates = (e, svg) => {
     const rect = svg.getBoundingClientRect();
